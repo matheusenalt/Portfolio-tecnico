@@ -1,0 +1,6 @@
+[
+  {"id": "LAB-001", "label": "Exemplo Alfa", "category": "A", "quantity": 10},
+  {"id": "LAB-002", "label": "Exemplo Beta", "category": "B", "quantity": 0},
+  {"id": "LAB-003", "label": "", "category": "A", "quantity": 2},
+  {"id": "LAB-004", "label": "Exemplo Delta", "category": "", "quantity": -2}
+]

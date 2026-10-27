@@ -1,0 +1,49 @@
+# Credenciais e chaves
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*credentials*
+*secrets*
+
+# Bases locais, snapshots, arquivos gerados, relatórios
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+backups/
+restaurados/
+*.tar.gz
+*.dump
+*.bak
+*.log
+reports/
+logs/
+
+# Python/editor/OS
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Documentos/arquivos internos nunca devem entrar aqui
+*.fdb
+*.fbk
+*.xml
+*.pdf
+*.docx
+*.xlsx
+*.zip
