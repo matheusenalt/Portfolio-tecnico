@@ -4,7 +4,7 @@
 
 **Infraestrutura Linux • Suporte Técnico • Docker • SQL • Automação**
 
-Projetos e laboratórios que mostram minha experiência com sustentação de sistemas, diagnóstico de incidentes, implantação de serviços e rotinas de continuidade operacional.
+Projetos, ferramentas e laboratórios que mostram minha experiência com sustentação de sistemas, diagnóstico de incidentes, automação, implantação de serviços e rotinas de continuidade operacional.
 
 ![Linux](https://img.shields.io/badge/Linux-Administra%C3%A7%C3%A3o%20e%20suporte-FCC624?logo=linux&logoColor=black&style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white&style=flat-square)
@@ -12,7 +12,7 @@ Projetos e laboratórios que mostram minha experiência com sustentação de sis
 ![SQL](https://img.shields.io/badge/SQL-Firebird%20%7C%20SQLite-4479A1?style=flat-square)
 ![CI](https://img.shields.io/badge/Testes-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white&style=flat-square)
 
-[**Projetos**](#-projetos-e-experi%C3%AAncias) · [**Laboratórios**](#-laborat%C3%B3rios-pr%C3%A1ticos) · [**Executar**](#-como-executar) · [**Contato**](#-contato)
+[**Projetos**](#-projetos-e-experi%C3%AAncias) · [**Ferramentas Sol**](#sol-ferramentas-pessoais) · [**Laboratórios**](#-laborat%C3%B3rios-pr%C3%A1ticos) · [**Executar**](#-como-executar) · [**Contato**](#-contato)
 
 </div>
 
@@ -20,7 +20,7 @@ Projetos e laboratórios que mostram minha experiência com sustentação de sis
 
 ## 🎯 Sobre mim
 
-Sou estudante de **Segurança da Informação** e atuo com suporte técnico a sistemas empresariais. No dia a dia, trabalho com atendimento, análise de erros, bancos de dados e validação de soluções. Também participei de projetos de infraestrutura em VPS Linux, implantação de serviços com Docker, organização de acessos e rotinas de backup.
+Sou estudante de **Segurança da Informação** e atuo com suporte técnico a sistemas empresariais. No dia a dia, trabalho com atendimento, análise de erros, bancos de dados e validação de soluções. Também desenvolvi e organizei iniciativas de automação de rotinas, participei da implantação de um portal interno em Linux e trabalhei com a continuidade operacional por meio de backups, verificações e documentação.
 
 Meu foco profissional é evoluir para **Infraestrutura Linux, Operações Cloud e Suporte N2**. Este repositório reúne parte desse caminho: os desafios práticos que enfrentei e laboratórios independentes para demonstrar como aplico os conceitos.
 
@@ -34,7 +34,7 @@ Meu foco profissional é evoluir para **Infraestrutura Linux, Operações Cloud 
 | **Continuidade** | Backup, recuperação, SHA-256, SFTP, VirtualBox |
 | **Automação e testes** | Bash, Python, validação funcional, testes automatizados e GitHub Actions |
 
-> **Como ler este repositório:** os **estudos de caso** relatam atividades reais de forma anonimizada. Os **laboratórios** são implementações independentes, com dados fictícios, criadas para experimentar e demonstrar conceitos. Nenhum código, banco ou configuração de produção de terceiros está publicado aqui.
+> **Como ler este repositório:** os **estudos de caso** relatam atividades reais de forma anonimizada. Os **laboratórios** são implementações independentes, com dados fictícios, criadas para experimentar e demonstrar conceitos. As **ferramentas pessoais Sol** têm código e documentação em [um repositório próprio](https://github.com/matheusenalt/sol). Nenhum código, banco ou configuração de produção de terceiros está publicado aqui.
 
 ---
 
@@ -44,15 +44,50 @@ Os projetos abaixo representam situações que surgiram no meu trabalho com supo
 
 | Projeto | O que foi feito | Tecnologias principais | Situação |
 |---|---|---|---|
-| [**01 · Plataforma interna em Linux**](cases/01-plataforma-linux.md) | Implantação e sustentação de serviços web, organização de acessos e documentação operacional | Linux, VPS, Docker, Caddy | Implantação realizada |
-| [**02 · Automação de análise de dados**](cases/02-automacao-dados.md) | Diagnóstico de bases, apoio à automação de cadastros e tratamento de exceções | Firebird, SQL, HTTP | Implantação acompanhada |
+| [**01 · Plataforma interna em Linux**](cases/01-plataforma-linux.md) | Centralização de serviços internos, colaboração, base de conhecimento, acessos, documentação e sustentação | Linux, VPS, Docker, Caddy | Implantação realizada |
+| [**02 · Automação de dados fiscais**](cases/02-automacao-dados.md) | Automação de classificação e sincronização fiscal; **267.854 itens processados em 98 clientes** (resultado acumulado informado em 01/11/2026) | Firebird, SQL, automação | Solução operacional acompanhada |
 | [**03 · Backup e continuidade**](cases/03-backup-continuidade.md) | Cópias externas, integridade de arquivos, execução e testes de recuperação | Linux, SFTP, SHA-256, VM | Testes históricos registrados |
 | [**04 · Investigação de falhas**](cases/04-diagnostico-qa.md) | Reprodução de erros, consultas SQL, validação de correções e comunicação com desenvolvimento | SQL, PHP, JavaScript | Atividade recorrente |
 | [**05 · Integração documental**](cases/05-poc-integracao.md) | Requisitos, desenho de integração e protótipo de fluxo documental | APIs, modelagem, documentação | Prova de conceito parcial |
 
 ### Meu papel nesses projetos
 
-Minha atuação envolveu principalmente **implantação, suporte, diagnóstico, validação, automação de rotinas e documentação**. Parte do trabalho ocorreu em conjunto com outros profissionais. Por isso, descrevo a minha participação técnica em vez de atribuir a mim o desenvolvimento integral dos sistemas.
+Minha atuação envolveu **levantamento de necessidades, iniciativa de automatização, implantação e configuração de serviços, troubleshooting, validação e documentação**. Os estudos de caso diferenciam minhas entregas diretas das atividades realizadas com outros profissionais e não reproduzem o código ou a infraestrutura de terceiros.
+
+### Indicadores de impacto operacional
+
+| Iniciativa | Resultado documentado |
+|---|---|
+| **Automação fiscal em ambiente de trabalho** | **267.854 itens sincronizados**, em **98 clientes** — acumulado informado pelo autor em **01/11/2026**; indicador agregado, sem identificação de clientes |
+| **Plataforma interna em Linux** | Centralização de serviços e documentação de operação, com rotinas de verificação e continuidade |
+| **Backup externo** | Rotina de coleta e validação de integridade, com ensaio histórico de recuperação |
+
+> Os números da automação são um **registro informado do painel operacional** na data indicada, não uma medição independente. Os estudos de caso não incluem dados de clientes nem material de produção. Antes de divulgar capturas de tela, confira o [guia de imagens públicas](docs/IMAGENS-PROJETOS.md).
+
+---
+
+## Sol: ferramentas pessoais
+
+O **Sol** é uma coleção de aplicativos que desenvolvo de forma independente para resolver necessidades práticas, principalmente na minha rotina de suporte técnico. O foco é **reduzir tarefas repetitivas, organizar informações e tornar os atendimentos mais ágeis**.
+
+As ferramentas publicadas têm documentação e código-fonte disponíveis no [repositório oficial do Sol](https://github.com/matheusenalt/sol). Os instaladores são disponibilizados pela seção de [Releases](https://github.com/matheusenalt/sol/releases), separadamente do código.
+
+| Ferramenta | Objetivo | Situação |
+|---|---|---|
+| [**Sol Fiscal**](https://github.com/matheusenalt/sol/tree/main/Sol-Fiscal) | Apoio a consultas de CNPJ, inscrição estadual e NCM, além de análises e revisões fiscais em lote | Projeto público |
+| [**Sol Delivery**](https://github.com/matheusenalt/sol/tree/main/Sol-Delivery) | Organização e conferência de produtos e cardápios, com apoio à preparação de descrições, valores e imagens | Projeto público |
+| **Sol Gestor MEI** | Sistema em desenvolvimento para apoiar a gestão de clientes, documentos e rotinas administrativas de MEIs | Em desenvolvimento; distribuição ainda não definida |
+
+### O que esses projetos demonstram
+
+- Identificação de problemas operacionais e desenvolvimento de soluções próprias.
+- Organização de código, documentação e controle de versões com Git e GitHub.
+- Preparação de aplicativos Windows para distribuição por instaladores e GitHub Releases.
+- Evolução contínua das ferramentas conforme novas necessidades aparecem.
+
+**Código, documentação e downloads:** [github.com/matheusenalt/sol](https://github.com/matheusenalt/sol)
+
+> **Projetos distintos:** os aplicativos pessoais publicados no **Sol** não devem ser confundidos com a automação fiscal utilizada em ambiente corporativo e descrita no [estudo de caso 02](cases/02-automacao-dados.md).
 
 ---
 
@@ -115,6 +150,7 @@ Portfolio-tecnico/
 │   ├── 04-diagnostico-linux/
 │   └── 05-integracao-http/
 ├── docs/roadmap.md            # Próximos estudos
+├── docs/IMAGENS-PROJETOS.md    # Guia de capturas autorizadas e anonimizadas
 └── scripts/                   # Testes e revisão de arquivos
 ```
 
@@ -157,7 +193,7 @@ Para backup, SQL e integração HTTP, siga os comandos nos respectivos READMEs. 
 - **Testes locais:** 13 testes automatizados passaram na preparação deste pacote, cobrindo API, backup/restauração, auditoria e integração.
 - **CI:** pipeline configurado para rodar novamente a cada push e pull request. O resultado mais recente pode ser consultado na aba *Actions* do GitHub.
 - **Docker:** a execução com Compose requer validação no ambiente onde for utilizada; o teste da stack containerizada não foi realizado neste pacote.
-- **Dados de terceiros:** nenhum cliente, credencial, endereço interno ou banco real deve entrar no repositório. Veja [SECURITY.md](SECURITY.md).
+- **Dados de terceiros:** nenhum cliente, credencial, endereço interno ou banco real deve entrar no repositório. Indicadores agregados devem ser verificados antes da divulgação. Veja [SECURITY.md](SECURITY.md) e o [guia de imagens](docs/IMAGENS-PROJETOS.md).
 
 Estes scripts foram feitos para **estudo e demonstração local**, não para implantação direta em produção.
 

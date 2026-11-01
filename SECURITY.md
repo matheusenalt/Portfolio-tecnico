@@ -1,6 +1,6 @@
 # Segurança e divulgação responsável
 
-Este repositório é público e reúne somente **documentação anonimizada** e **laboratórios com dados fictícios**.
+Este repositório é público e reúne **estudos de caso anonimizados**, **indicadores agregados declarados pelo autor** e **laboratórios com dados fictícios**. Indicadores e imagens de contexto profissional exigem verificação de permissão de divulgação antes da publicação.
 
 ## O que não entra aqui
 
@@ -8,6 +8,9 @@ Este repositório é público e reúne somente **documentação anonimizada** e 
 - Backups, bases de clientes, XMLs fiscais, documentos internos ou amostras de produção.
 - IPs operacionais, endereços internos, acessos ou qualquer informação que permita identificar a infraestrutura de terceiros.
 - Código-fonte proprietário ou configurações corporativas de produção.
+- Capturas de tela de produção sem autorização e anonimização rigorosa.
+
+Para preparar imagens públicas, consulte [docs/IMAGENS-PROJETOS.md](docs/IMAGENS-PROJETOS.md).
 
 ## Laboratórios
 

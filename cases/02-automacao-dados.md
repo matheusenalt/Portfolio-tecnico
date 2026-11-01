@@ -1,40 +1,63 @@
-# 02 · Automação de análise de dados
+# 02 · Automação de classificação e sincronização fiscal
 
-**Área:** sistemas, SQL e automação  
-**Situação:** solução utilizada em ambiente de trabalho, com implantação e evolução acompanhadas  
-**Tecnologias:** Firebird, SQL, integração HTTP, diagnóstico de registros
+**Área:** automação, dados fiscais, banco de dados e suporte técnico  
+**Situação:** solução utilizada e acompanhada em contexto profissional  
+**Tecnologias:** Firebird, SQL, processamento em lote, logs e validação de resultados
 
 ## Contexto
 
-Uma tarefa repetitiva de conferência de registros exigia esforço manual e gerava muitos casos para revisão. O desafio era automatizar etapas previsíveis e separar os registros que realmente precisavam de análise humana.
+A conferência de informações fiscais de produtos exigia atividades manuais repetitivas, com necessidade de identificar registros que poderiam ser processados e aqueles que exigiam análise humana. A iniciativa buscou **reduzir retrabalho, padronizar a conferência e tornar o processamento rastreável**.
 
 ## Minha atuação
 
-- Mapeei situações encontradas no atendimento e ajudei a definir as necessidades operacionais.
-- Trabalhei com consultas SQL/Firebird para diagnosticar divergências e validar resultados.
-- Participei de testes, implantação, acompanhamento de exceções e ajustes do fluxo.
-- Documentei comportamentos observados e encaminhei problemas com evidências reproduzíveis.
+- Identifiquei a necessidade operacional no atendimento e trabalhei no desenvolvimento de uma solução de apoio à classificação e sincronização fiscal.
+- Analisei registros em bases de dados e utilizei consultas SQL/Firebird para diagnóstico e validação.
+- Estruturei e acompanhei processos de análise em lote, com distinção entre itens processados e casos que exigiam revisão.
+- Trabalhei com registros de execução, verificações e medidas de segurança antes de operações com potencial de alterar informações.
+- Acompanhei resultados, exceções e ajustes junto ao fluxo de suporte e aos demais profissionais envolvidos.
 
-## Abordagem
+## Resultado registrado
+
+| Indicador | Acumulado informado em 01/11/2026 |
+|---|---:|
+| Itens sincronizados | **267.854** |
+| Clientes processados | **98** |
+
+Esses são **valores agregados informados pelo autor**, consultados no painel operacional na data indicada; não representam clientes identificados nem auditoria independente. Não foi incluída uma estimativa de horas economizadas, pois ela dependeria de metodologia e evidências específicas.
+
+## Fluxo simplificado
 
 ```text
-Registro em base local
-         |
-         v
-   Análise de dados
-         |
-      +--+--+
-      |     |
-   Válido  Revisão necessária
-      |     |
-      v     v
-  Resultado  Fila de análise
+Leitura de registros em base local
+                |
+                v
+      Análise de classificação
+                |
+           +----+----+
+           |         |
+           v         v
+     Processável   Revisão manual
+           |         |
+           v         v
+    Sincronização   Registro da exceção
+           |
+           v
+     Log / conferência
 ```
 
-## Aprendizados
+O desenho é ilustrativo e **não contém estrutura real de banco, algoritmos internos ou regras proprietárias**.
 
-Automatizar não significa eliminar todas as exceções. É importante registrar o que foi processado, distinguir o resultado da operação e permitir conferência antes de alterações sensíveis.
+## O que esse trabalho demonstra
 
-**Demonstrações relacionadas:** [Auditoria SQL](../lab/03-sql-validacao/README.md) e [Integração HTTP](../lab/05-integracao-http/README.md).
+- Transformação de uma atividade manual recorrente em um fluxo de automação assistida.
+- Capacidade de lidar com grande volume de registros e acompanhar exceções.
+- Diagnóstico com SQL, validação de resultados e atenção a riscos de alteração de dados.
+- Documentação de processo e comunicação técnica para suporte e desenvolvimento.
 
-> Os exemplos deste GitHub usam regras e dados fictícios. Não incluem lógica empresarial, estrutura de banco, números operacionais ou código da solução original. A implementação em trabalho foi colaborativa.
+**Demonstrações independentes:** [Auditoria SQL](../lab/03-sql-validacao/README.md) e [Integração HTTP](../lab/05-integracao-http/README.md). Esses laboratórios usam dados fictícios.
+
+### Capturas e evidências
+
+Há possibilidade de acrescentar **capturas de interface e indicadores consolidados**, desde que autorizadas, com anonimização prévia e sem detalhes de clientes ou ambientes. Consulte o [guia para imagens públicas](../docs/IMAGENS-PROJETOS.md). Nenhuma captura de produção foi adicionada nesta versão.
+
+> **Separação de projetos:** esta é uma experiência de automação fiscal em ambiente profissional. O [Sol Fiscal](https://github.com/matheusenalt/sol/tree/main/Sol-Fiscal) é uma ferramenta pessoal, apresentada em outro repositório; não é uma publicação do código corporativo descrito aqui.
